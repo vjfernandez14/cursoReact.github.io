@@ -6,7 +6,7 @@ const tituloEstilo = {
   marginLeft: '100px'
 };
 
-const ItemListContainer = (props) => {
+const ItemListContainerTodo = (props) => {
   const [productos, setProductos] = useState([]);
 
   useEffect(() => {
@@ -49,10 +49,6 @@ const ItemListContainer = (props) => {
     fetchProductos();
   }, []);
 
-   // Filtrar productos por categoría
-   const productosFiltrados = productos.filter(
-           (producto) => producto.categoria === props.categoriaFiltrada
-      );
 
 
   return (
@@ -62,7 +58,7 @@ const ItemListContainer = (props) => {
 
       <div className="product-list  col-md-12">
         <div className='row'>
-          {productosFiltrados.map((producto) => (
+          {productos.map((producto) => (
             <div key={producto.id} className='col-md-4'>
               <div className="card" style={{ marginBottom: '20px' }}>
                 <img src="src\imagenes\tienda.png" className="card-img-top" alt="..." />
@@ -81,8 +77,5 @@ const ItemListContainer = (props) => {
   )
 }
 
-ItemListContainer.propTypes = {
-  categoriaFiltrada: PropTypes.string.isRequired
-};
 
-export default ItemListContainer;
+export default ItemListContainerTodo;

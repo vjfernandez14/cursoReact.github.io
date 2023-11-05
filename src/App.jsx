@@ -7,16 +7,24 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'; //incluimos bootstrap
 //importamos componentes
 import React from 'react';
 import NavBar from './components/NavBar';
-import Contenedor from './components/ItemListContainer';
+import ItemListContainer from './components/ItemListContainer';
+import Pais from './components/Pais';
+import Routing from './components/Routing';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 //app principal
 function App() {
  
   return (
   <div> 
-      <NavBar logoTienda="src\imagenes\logo1.png" />;
-      <Contenedor MensajeUsuario="Bienvenido, pronto podras ver nuestros productos" />;
+     <BrowserRouter>
+        <NavBar logoTienda="\src\imagenes\logo1.png" />
+        <Routing/>
+
+      </BrowserRouter> 
   </div>
+      
+      
    
   );
   }

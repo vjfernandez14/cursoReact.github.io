@@ -9,7 +9,7 @@ const estiloCarro = {
 const CarritoW = props => {
   return (
     <div className='carrito'>
-        <span><img className='shop' src='src\imagenes\iconShop.png' alt='carrito' style={estiloCarro}/> ({props.contarArticulos})</span>
+        <span><img className='shop' src='\src\imagenes\iconShop.png' alt='carrito' style={estiloCarro}/> ({props.contarArticulos})</span>
     </div>
   );
 }

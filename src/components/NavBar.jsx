@@ -2,6 +2,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CarritoW from './CartWidget';
+import Home from './Home';
+import Routing from './Routing';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import Productos from './Productos';
+//import TaskList from './TaskList';
+//import ProductDetail from './ProductDetail';
 
 
 const logoEstilo = {
@@ -20,16 +26,27 @@ function NavBar(props) {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+
           <div className="navbar-nav">
-            <a className="nav-link active" aria-current="page" href="#">Home</a>
-            <a className="nav-link" href="#">Productos</a>
-            <a className="nav-link" href="#">contactanos</a>
-            <div className="navbar-nav ml-auto"> 
-                <a className="nav-link carrito" href='#'><CarritoW contarArticulos="3" /></a>
-            </div>
+            <Link className="nav-link active" aria-current="page" to="/">
+              Home
+            </Link>
+            <Link className="nav-link" to="/productos">
+              Productos
+            </Link>
+          
+            <div className="navbar-nav ml-auto">
+              <a className="nav-link carrito" href="#">
+                <CarritoW contarArticulos={3} />
+              </a>
+              </div>
+          </div>
+       
+          
           </div>
         </div>
-      </div>
+      
     </nav>
   );
 }
