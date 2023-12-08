@@ -1,4 +1,3 @@
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import CarritoW from './CartWidget';
@@ -35,11 +34,14 @@ function NavBar(props) {
             <Link className="nav-link" to="/productos">
               Productos
             </Link>
+            <Link className="nav-link" to="/cartWidget">
+              Carrito
+            </Link>
           
-            <div className="navbar-nav ml-auto">
-              <a className="nav-link carrito" href="#">
+            <div className="nav-item dropdown">
+              
                 <CarritoW contarArticulos={3} />
-              </a>
+              
               </div>
           </div>
        

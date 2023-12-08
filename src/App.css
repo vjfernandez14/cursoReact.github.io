@@ -1,12 +1,15 @@
 #root {
   max-width: auto;
-  position: fixed; 
+  
   top: 0; 
   left: 0;
   right: 0;
   z-index: 999;
+  
 
 }
 
-
+#carro {
+  margin-left: 50px;
+}
 
