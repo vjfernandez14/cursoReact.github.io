@@ -5,14 +5,15 @@
 Este proyecto es un e-commerce desarrollado en React. que busca cumplir con las consignas y solicitudes realizadas en
 el curso de CODERHOUSE.
 
-   *** Importante tener en cuenta: 
+    Importante tener en cuenta: 
+    
             1. En el home, se filtran los productos por categoria y se pueden agregar de a uno.
             2. en /productos se obtienen todos los productos y al colocar agregar, se va al itemListDetail.
             3. En el ItemListDetail, tienes el itemCount para agregar los item segun el stock disponoble.
             4. Una vez agregado al carrito, se puede ir al carrito desde widget, o desde el navbar
             5. Una vez en el carro, se puede seguir agregando, borrar algun item, finalizar compra y se ve el total de la compra.
             6. Despues de finalizar la compra, se obtiene el id de referencia de la compra. 
-            ***
+            
 
 
 ## Herramientas Utilizadas
