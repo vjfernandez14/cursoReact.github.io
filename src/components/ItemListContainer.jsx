@@ -11,7 +11,7 @@ const ItemListContainer = (props) => {
   const { products, addItem } = useCart();
 
   useEffect(() => {
-    // Puedes agregar lógica adicional aquí si es necesario
+    
   }, []);
 
   // Filtrar productos por categoría

@@ -81,7 +81,7 @@ export const CartProvider = ({children}) => {
           const docRef = await addDoc(compraRef, detallesCompra);
           console.log('Documento de compra añadido con ID: ', docRef.id);
           setCompraId(docRef.id);
-          // Puedes hacer más cosas después de añadir el documento si es necesario
+          
         } catch (error) {
           console.error('Error al añadir documento de compra: ', error);
         }

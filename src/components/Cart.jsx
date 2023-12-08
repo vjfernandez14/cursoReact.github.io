@@ -16,7 +16,7 @@ const Cart = () => {
       return accumulator + totalPrice;
     }, 0);
 
-    // Aplica toFixed(2) para redondear a dos decimales, si es necesario
+    
     return total.toFixed(2);
   };
 
@@ -33,25 +33,25 @@ const Cart = () => {
     const detallesCompra = {
       items: cartItems,
       total: totalSum,
-      // Puedes agregar más detalles de la compra si es necesario
+      
     };
 
     
 
     try {
-      // Llamar a la función confirmarCompra del contexto
+      
        const idCompra = await confirmarCompra(detallesCompra);
   
-      // Aquí puedes hacer algo con el ID de la compra, por ejemplo, mostrarlo en la consola
+      
       console.log("Compra confirmada con ID:", idCompra);
   
-      // Establecer el estado de compra exitosa
+      
       setCompraExitosa(true); 
       console.log(idCompra)
     } catch (error) {
-      // Manejar errores en la confirmación de la compra
+      
       console.error("Error al confirmar la compra:", error);
-      setCompraExitosa(false); // Opcional: Puedes manejar el estado de compra exitosa según tu lógica
+      setCompraExitosa(false); 
     }
   };
 

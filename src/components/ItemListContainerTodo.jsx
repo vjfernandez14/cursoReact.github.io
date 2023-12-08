@@ -13,7 +13,7 @@ const ItemListContainerTodo = (props) => {
   const { products } = useCart();
 
   useEffect(() => {
-    // Puedes agregar lógica adicional aquí si es necesario
+   
   }, []);
   console.log(products)
 

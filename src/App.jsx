@@ -42,7 +42,7 @@ function App() {
 
        const [loading, setLoading] = useState(true);
 
-        // Simulación de carga (puedes eliminar esto en un entorno real)
+        
         useEffect(() => {
          const timeout = setTimeout(() => {
             setLoading(false);
